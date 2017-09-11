@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*
+.dimed {position: absolute; top: 0; left: 0; bottom: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.6; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";filter: alpha(opacity=60); z-index: 998;}
+*/
+.modalBg {position:absolute; top:0; left:0; bottom:0; width:100%; height:100%; background-color:#000; opacity:0.4; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)"; filter:alpha(opacity=40); z-index:4999;}
+.modal {position:fixed;top:14%;left:50%;background:#fff url('../images/modal/modal_bg01.gif') no-repeat 0 0;z-index:5000;}
+.modal .modal-content {position:relative;padding:50px 30px 30px 30px}
+.modal .modal-content .close, .modalGoods .modal-content .close {position:absolute;top:-25px;right:-25px;width:50px;height:50px;background:url('../images/modal/btn_close.png') no-repeat 0 0;text-indent:-9999em}
+.modal .modal-content h2 {margin-bottom:20px;color:#d71920; font-size:24px;font-weight:700}
+.modal .modal-content h3 {padding-top:10px;margin-bottom:10px; border-top:1px solid #dedede;color:#d71920;font-weight:700}
+.modal .modal-content h4 {padding-top:10px;margin-bottom:10px; color:#d71920;font-weight:700; font-size:16px;}
+.modal .modal-content p {font-size:14px;margin-bottom:10px;line-height:120%}
+
+
+/* 상품 미리 보기 */
+.modalGoods {position:fixed;top:50%;left:50%;background:#fff url('../images/modal/modal_bg01.gif') no-repeat 0 0;z-index:5000;}
+.modalGoods.goods-pop {margin:-250px 0 0 -520px; background:#fff url('../images/modal/modal_bg01.gif') no-repeat 0 0}
+.modalGoods .modal-content {position:relative;padding:50px 30px 30px 30px; width:940px;}
+.modalGoods .modal-content h2 {padding-bottom:10px; color:#231f20; font-size:16px;font-weight:700; border-bottom: 3px solid #231f20;}
+.modalGoods .modal-content .imgScreen {float:left; margin-top:30px; width:420px; overflow:hidden;}
+.modalGoods .modal-content .imgScreen img {border:1px solid #ebebeb;}
+.modalGoods .modal-content .imgScreenThumb {float:left; margin-top:30px; width:70px; overflow:hidden;}
+.modalGoods .modal-content .imgScreenThumb img {border:1px solid #ebebeb;}
+.modalGoods .modal-content .goodsDetail {float:left; margin-top:30px; width:450px; overflow:hidden;}
+
+.modalGoods .modal-content .goodsDetail .price {padding:10px; position:relative; float:left; width:428px; background-color:#f7f6f6; border:1px solid #ebebeb; line-height:200%;}
+.modalGoods .modal-content .goodsDetail .price .customer {font-family:Tahoma; font-size:12px; text-decoration:line-through; color:#a1a1a1;}
+.modalGoods .modal-content .goodsDetail .price .discount {font-family:Tahoma; font-size:20px; color:#b11f24;}
+.modalGoods .modal-content .goodsDetail .price .discount .discountPercent {font-size:13px;}
+.modalGoods .modal-content .goodsDetail dt, .modalGoods .modal-content .goodsDetail dd{float:left; display:block; position:relative;}
+.modalGoods .modal-content .goodsDetail dt {width:100px;}
+.modalGoods .modal-content .goodsDetail dd {width:310px;}
+.modalGoods .modal-content .goodsDetail .etcInfo {padding:10px;}
+.modalGoods .modal-content .goodsDetail .etcInfo dt, .modalGoods .modal-content .goodsDetail .etcInfo dd {padding:7px 0; background:url('../images/pages/goods_list_line_dot_light.gif') repeat-x bottom left;}
+.modalGoods .modal-content .goodsDetail .btn {padding-top:20px;}
+.modalGoods .modal-content .goodsDetail .btn img {margin-right:7px;}
+
+/* 쿠폰 발행 */
+.modal.coupon-pop {margin:0 0 0 -450px; background:#fff url('../images/modal/modal_bg01.gif') no-repeat 0 0}
+.modal .modal-content .coupon .lineUpDown {border-top:3px solid #231f20; border-bottom:1px solid #231f20; padding:10px 0;}
+.modal .coupon .sayCouponIssue {padding:10px; background-color:#fff799; border:1px solid #ffcb05;}
+.modal .coupon .viewCouponList {padding:10px; background-color:#fff; border:2px solid #b11f24;}
+
+/* 게시판 */
+.modal.board-pop {margin:0 0 0 -450px; background:#fff url('../images/modal/modal_bg01.gif') no-repeat 0 0}
+.modal .modal-content .board .lineUpDown {border-top:3px solid #231f20; border-bottom:1px solid #231f20; padding:10px 0;}
+
+/* 이메일 무단 수집거부 */
+.modal.email-pop {margin:0 0 0 -230px; background:#fff url('../images/modal/modal_bg01.gif') no-repeat 0 0}
+
+/* 브라우저 안내 */
+.modal.browser-pop {margin:0 0 0 -230px; background:#fff url('../images/modal/modal_bg01.gif') no-repeat 0 0}
+
+.modal .modal-content .browser .list {text-align:center;overflow:hidden}
+.modal .modal-content .browser .list a {float:left;width:25%}
+.modal .modal-content .browser .list a img {max-width:100%;margin:0 5px}
